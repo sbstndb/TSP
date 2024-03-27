@@ -12,8 +12,8 @@ make -j
 In both `branch` and `bruteforce` solvers, you can launch the resolution with : 
 
 <ul>
-	<li>A custom file with the command `<exe> -f <file>` </li>
-        <li>An ambedded file (for demonstration purpose) with the command `<exe> -e` </li>
+	<li>A custom file with the command ```<exe> -f <file>```</li>
+        <li>An embedded file (for demonstration purpose) with the command `<exe> -e` </li>
         <li>A random generated graph with the command `<exe> -n <size>`</li>
 </ul>
 
