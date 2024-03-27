@@ -13,16 +13,16 @@ In both `branch` and `bruteforce` solvers, you can launch the resolution with :
 
 <ul>
 	<li>A custom file with the command `<exe> -f <file>` </li>
-        <li>An ambedded file (for demonstration purpose) with the command <exe> -e </li>
+        <li>An ambedded file (for demonstration purpose) with the command `<exe> -e` </li>
         <li>A random generated graph with the command `<exe> -n <size>`</li>
 </ul>
 
-
-You can also simply launch an example execution with :
-```bash
-make run
-```
-Then the Branch&Bound and the Bruteforce methods attemps to compute the optimal path with a random 12 nodes problem.
+>[!TIP]
+>You can also simply launch an example execution with :
+>```bash
+>make run
+>```
+>Then the Branch&Bound and the Bruteforce methods attemps to compute the optimal path with a random 12 nodes problem.
 
 
 
