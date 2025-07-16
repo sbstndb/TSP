@@ -177,6 +177,27 @@ Elapsed time :
 ```
 On this larger problem, the Branch and Bound method is over 10x faster.
 
+## Performance
+To provide a clear comparison of the two algorithms, we benchmarked their performance on randomly generated problems of increasing size. The tests were compiled with `gcc -Ofast` and run on an Arch Linux machine. The execution time for each solver is shown in the table below.
+
+| Graph Size (n) | Branch & Bound (ms) | Brute-Force (ms) |
+| :---: | :---: | :---: |
+| 2 | 0.002 | 0.018 |
+| 3 | 0.004 | 0.012 |
+| 4 | 0.007 | 0.016 |
+| 5 | 0.016 | 0.017 |
+| 6 | 0.024 | 0.019 |
+| 7 | 0.062 | 0.027 |
+| 8 | 0.121 | 0.106 |
+| 9 | 0.120 | 0.793 |
+| 10 | 0.361 | 6.400 |
+| 11 | 1.164 | 62.011 |
+| 12 | 1.727 | 553.986 |
+| 13 | 0.875 | 4235.917 |
+| 14 | 1.302 | 56149.168 |
+
+As the table shows, the execution time of the brute-force algorithm grows exponentially with the problem size, which is consistent with its O(n!) complexity. The Branch and Bound algorithm, on the other hand, is significantly more efficient. While its performance can vary depending on the specific problem instance (as seen with n=13), it consistently outperforms the brute-force method by several orders of magnitude on larger problems.
+
 ## TODO
 - [x] Implement brute-force solver
 - [x] Implement branch-and-bound solver
